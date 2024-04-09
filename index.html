@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./Logos del proyecto encriptador/favicon.ico">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="contenedor-gris">
+        <header>
+            <img src="./imagenes/channels4_profile.jpg" alt="Logo" class="logo">
+        </header>
+        <div class="contenido-central">
+            <section class="Encriptador">
+                <textarea class="encriptar" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="encriptador-aviso">
+                    <p class="texto-aviso">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="encriptador-contenedor">
+                    <button class="btn-encriptar">Encriptar</button>
+                    <button class="btn-desencriptar">Desencriptar</button>
+                </div>
+            </section>
+            <section class="tarjeta">
+                <textarea class="evaluar" readonly></textarea>
+                <button class="btn-copiar">Copiar</button>
+            </section>
+        </div>
+        <footer>
+            <p>&copy; Grupo ONE G6 2024 - Proyecto Encriptador de texto - Nicolay Miranda </p>
+        </footer>
+    </div>
+    <script src="./Javascript/encriptador.js"></script>
+</body>
+
+</html>

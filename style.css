@@ -1,0 +1,159 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --Font: #E5E5E5;
+    --White: #FFFFFF;
+    --Dark-Blue: #0A3871;
+    --Grey: #C5C5C5;
+    --Medium-Gray: #708896;
+    --RGBA: rgba(7, 6, 6, 0.08);
+    --White-Blue: #D8DFE8;
+    --Medium-Blue: #0229588a;
+    --Gray: #202427;
+    --Green: #54585c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-image: url(/imagenes/dalle.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-gris::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Overlay oscuro para contraste */
+    border-radius: 10px;
+    /* Asegúrate de que coincide con el contenedor padre */
+    z-index: -1;
+    /* Pone el overlay detrás del contenido */
+}
+
+.contenedor-gris {
+    width: 85%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    width: 85%;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo {
+    max-width: 20%;
+    height: auto;
+    border: none;
+}
+.contenido-central {
+    margin-bottom: 20px;
+}
+
+.Encriptador {
+    margin-bottom: 20px;
+}
+
+.encriptar,
+.evaluar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--Grey);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.encriptador-aviso {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--White);
+    background-color: rgba(2, 41, 88, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.encriptador-contenedor {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: transparent;
+}
+
+.tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    background: var(--Dark-Blue);
+    color: var(--White);
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: var(--Medium-Blue);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    background: none;
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+
+    .encriptar,
+    .evaluar,
+    button {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+}
